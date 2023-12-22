@@ -5,6 +5,7 @@ on:
 
 jobs:
   use-cached-postgres-image:
+    runs-on: buildjet-4vcpu-ubuntu-2204
     steps:
       - uses: ./.github/actions/cache-postgres-image
   e2e:

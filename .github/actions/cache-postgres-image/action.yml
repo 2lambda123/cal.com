@@ -1,0 +1,19 @@
+name: Cache postgres image between jobs
+description: "Cache or restore if necessary"
+runs:
+  using: "composite"
+  steps:
+    - name: Restore Postgres Image Cache if it exists
+      id: cache-docker-postgres
+      uses: actions/cache@v3
+      with:
+        path: ci/cache/docker/postgres
+        key: cache-docker-postgres
+
+    - name: Update Postgres Image Cache if cache miss
+      if: steps.cache-docker-postgres.outputs.cache-hit != 'true'
+      run: docker pull postgres:12.1 && mkdir -p ci/cache/docker/postgres && docker image postgres:12.1 --output ./ci/cache/docker/postgres/postgres:12.1.tar
+
+    - name: Use Postgres Image Cache if cache hit
+      if: steps.cache-docker-postgres.outputs.cache-hit == 'true'
+      run: docker image load --input ./ci/cache/docker/postgres/postgres:12.1.tar

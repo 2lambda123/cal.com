@@ -4,6 +4,9 @@ on:
   workflow_call:
 
 jobs:
+  use-cached-postgres-image:
+    steps:
+      - uses: ./.github/actions/cache-postgres-image
   e2e:
     timeout-minutes: 20
     name: E2E tests (${{ matrix.shard }}/${{ strategy.job-total }})

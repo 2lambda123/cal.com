@@ -3012,7 +3012,7 @@ __metadata:
     mailparser: ^3.6.5
     next: ^13.5.1
     supports-color: 8.1.1
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -3065,7 +3065,7 @@ __metadata:
     typescript: ^4.9.4
     tzdata: ^1.0.30
     uuid: ^8.3.2
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -3291,7 +3291,7 @@ __metadata:
     "@sendgrid/mail": ^7.6.2
     libphonenumber-js: ^1.10.12
     twilio: ^3.80.1
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -3708,7 +3708,7 @@ __metadata:
     npm-run-all: ^4.1.5
     prisma: ^5.2.0
     ts-node: ^10.9.1
-    zod: ^3.22.2
+    zod: ^3.22.3
     zod-prisma: ^0.5.4
   languageName: unknown
   linkType: soft
@@ -3869,7 +3869,7 @@ __metadata:
     stripe: ^9.16.0
     ts-node: ^10.9.1
     uuid: ^8.3.2
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -3929,7 +3929,7 @@ __metadata:
     "@trpc/react-query": ^10.13.0
     "@trpc/server": ^10.13.0
     superjson: 1.9.1
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -4170,7 +4170,7 @@ __metadata:
     typescript: ^4.9.4
     uuid: ^8.3.2
     web3: ^1.7.5
-    zod: ^3.22.2
+    zod: ^3.22.3
   languageName: unknown
   linkType: soft
 
@@ -37016,10 +37016,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.21.4, zod@npm:^3.22.2":
+"zod@npm:^3.21.4":
   version: 3.22.2
   resolution: "zod@npm:3.22.2"
   checksum: 231e2180c8eabb56e88680d80baff5cf6cbe6d64df3c44c50ebe52f73081ecd0229b1c7215b9552537f537a36d9e36afac2737ddd86dc14e3519bdbc777e82b9
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.3":
+  version: 3.22.4
+  resolution: "zod@npm:3.22.4"
+  checksum: 80bfd7f8039b24fddeb0718a2ec7c02aa9856e4838d6aa4864335a047b6b37a3273b191ef335bf0b2002e5c514ef261ffcda5a589fb084a48c336ffc4cdbab7f
   languageName: node
   linkType: hard
 

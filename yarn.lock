@@ -3335,7 +3335,7 @@ __metadata:
     "@playwright/test": ^1.31.2
     autoprefixer: ^10.4.12
     npm-run-all: ^4.1.5
-    postcss: ^8.4.18
+    postcss: ^8.4.31
     tailwindcss: ^3.3.1
     typescript: ^4.9.4
     vite: ^4.1.2
@@ -3837,7 +3837,7 @@ __metadata:
     babel-loader: ^8.2.5
     fs: ^0.0.1-security
     next: ^13.5.1
-    postcss: ^8.4.18
+    postcss: ^8.4.31
     postcss-pseudo-companion-classes: ^0.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -4134,7 +4134,7 @@ __metadata:
     next-themes: ^0.2.0
     nodemailer: ^6.7.8
     otplib: ^12.0.1
-    postcss: ^8.4.18
+    postcss: ^8.4.31
     qrcode: ^1.5.1
     raw-body: ^2.5.1
     react: ^18.2.0
@@ -26189,6 +26189,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.3.7":
+  version: 3.3.7
+  resolution: "nanoid@npm:3.3.7"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: d36c427e530713e4ac6567d488b489a36582ef89da1d6d4e3b87eded11eb10d7042a877958c6f104929809b2ab0bafa17652b076cdf84324aa75b30b722204f2
+  languageName: node
+  linkType: hard
+
 "nanomatch@npm:^1.2.9":
   version: 1.2.13
   resolution: "nanomatch@npm:1.2.13"
@@ -28572,7 +28581,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.4.18":
+"postcss@npm:^8.2.15":
   version: 8.4.18
   resolution: "postcss@npm:8.4.18"
   dependencies:
@@ -28591,6 +28600,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 8bb9d1b2ea6e694f8987d4f18c94617971b2b8d141602725fedcc2222fdc413b776a6e1b969a25d627d7b2681ca5aabb56f59e727ef94072e1b6ac8412105a2f
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.31":
+  version: 8.4.32
+  resolution: "postcss@npm:8.4.32"
+  dependencies:
+    nanoid: ^3.3.7
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 220d9d0bf5d65be7ed31006c523bfb11619461d296245c1231831f90150aeb4a31eab9983ac9c5c89759a3ca8b60b3e0d098574964e1691673c3ce5c494305ae
   languageName: node
   linkType: hard
 

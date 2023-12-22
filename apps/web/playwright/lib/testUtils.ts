@@ -222,6 +222,14 @@ export async function getEmailsReceivedByUser({
   userEmail: string;
 }): Promise<Messages | null> {
   if (!emails) return null;
+  console.log(
+    "All the emails are",
+    (await emails.messages())?.items.map((i) => {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
+      return { to: i.to, from: i.from, body: i?.Content?.Body?.substring(0, 500) };
+    })
+  );
   return emails.search(userEmail, "to");
 }
 

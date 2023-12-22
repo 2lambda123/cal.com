@@ -34,6 +34,11 @@ env:
   TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
 jobs:
+  use-cached-postgres-image:
+    name: Use cached postgres image
+    runs-on: buildjet-4vcpu-ubuntu-2204
+    steps:
+      - uses: ./.github/actions/cache-postgres-image
   build:
     name: Build
     runs-on: buildjet-4vcpu-ubuntu-2204

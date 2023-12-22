@@ -8,12 +8,14 @@ runs:
       uses: actions/cache@v3
       with:
         path: ci/cache/docker/postgres
-        key: cache-docker-postgres
+        key: cache-docker-postgres-12:1
 
     - name: Update Postgres Image Cache if cache miss
       if: steps.cache-docker-postgres.outputs.cache-hit != 'true'
+      shell: bash
       run: docker pull postgres:12.1 && mkdir -p ci/cache/docker/postgres && docker image postgres:12.1 --output ./ci/cache/docker/postgres/postgres:12.1.tar
 
     - name: Use Postgres Image Cache if cache hit
       if: steps.cache-docker-postgres.outputs.cache-hit == 'true'
+      shell: bash
       run: docker image load --input ./ci/cache/docker/postgres/postgres:12.1.tar

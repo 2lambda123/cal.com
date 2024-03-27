@@ -120,7 +120,7 @@
     "react-use-intercom": "1.5.1",
     "remove-markdown": "^0.5.0",
     "rrule": "^2.7.1",
-    "sanitize-html": "^2.10.0",
+    "sanitize-html": "^2.12.1",
     "schema-dts": "^1.1.0",
     "short-uuid": "^4.2.0",
     "stripe": "^9.16.0",

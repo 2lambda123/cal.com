@@ -3456,7 +3456,7 @@ __metadata:
     jose: ^4.15.5
     lru-cache: ^9.0.3
     next-auth: ^4.24.5
-    nodemailer: ^6.7.8
+    nodemailer: ^6.9.9
     otplib: ^12.0.1
   languageName: unknown
   linkType: soft
@@ -4132,7 +4132,7 @@ __metadata:
     next-i18next: ^13.2.2
     next-seo: ^6.0.0
     next-themes: ^0.2.0
-    nodemailer: ^6.7.8
+    nodemailer: ^6.9.9
     otplib: ^12.0.1
     postcss: ^8.4.31
     qrcode: ^1.5.1
@@ -26965,10 +26965,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemailer@npm:^6.7.8":
-  version: 6.7.8
-  resolution: "nodemailer@npm:6.7.8"
-  checksum: 92d4a1d48813825989c7f5fc7cbcf5ba8d1a8acf8e10e420b4aa7670ade7abd0c543cc6cf8adf14e44c62552e26efb37b2a15a9af90a515fa90b40ffc71c433e
+"nodemailer@npm:^6.9.9":
+  version: 6.9.13
+  resolution: "nodemailer@npm:6.9.13"
+  checksum: 1b591ef480be2ff69480127cbff819e6593b1ef263b6f920e1a4e83e40280582daf7a14a809ef92f9828e2a70bdb3ce22b11924e209f2afe4975f9ff37e08e9d
   languageName: node
   linkType: hard
 
